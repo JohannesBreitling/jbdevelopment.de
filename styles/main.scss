@@ -1,0 +1,205 @@
+
+// ----------------------------------------
+// Imports for the font families
+// ----------------------------------------
+
+// Headline
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Body
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --bg-dark: #12161c;
+    --bg-dark-secondary: #424b5a;
+    --font-light: #fafafa;
+    --font-light-secondary: #7f919e;
+
+    --font-link: #4de1ff;
+
+    --font-body: "Source Code Pro", monospace;
+    --font-heading: "Jost", sans-serif;
+    
+
+
+    --spacing-v: 20%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.jb {
+    width: 100%;
+    height: 100%;
+}
+
+.jb .section {
+    width: 100%;
+    height: 100%;
+    padding-left: var(--spacing-v);
+    padding-right: var(--spacing-v);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.jb .vsection {
+    display: flex;
+    flex-direction: row;
+}
+
+.jb .vgroup {
+    width: 100%;
+}
+
+.jb .roadmap {
+    width: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+
+    margin-right: 48px;
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        border: 2px solid #868686;
+        flex-shrink: 0;
+    }
+
+    .line {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        flex-grow: 1;
+        width: 3px;
+        flex-shrink: 0;
+        border-radius: 2px;
+    }
+
+}
+
+.jb .card {
+    border-radius: 12px;
+    padding: 24px;
+}
+
+
+.jb {
+    
+    .bg-dark {
+        background-color: var(--bg-dark);
+        color: var(--font-light)
+    }
+
+    .bg-dark-secondary {
+        background-color: var(--bg-dark-secondary);
+        color: var(--font-light)
+    }
+
+    .font-secondary {
+        color: var(--font-light-secondary);
+    }
+
+}
+
+.jb {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-heading);
+    }
+
+    h1 {
+        font-size: 100px;
+        font-weight: 500;
+        letter-spacing: -1px;
+    }
+    
+    h3 {
+        font-size: 48px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    h6 {
+        font-size: 32px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    p, span, a {
+        font-size: 22px;
+        line-height: 36px;
+        font-family: var(--font-body);
+    }
+
+    a {
+        color: var(--font-link);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.jb {
+    
+    .mt-1 {
+        margin-top: 12px;
+    }
+
+    .mt-2 {
+        margin-top: 24px;
+    }
+
+    .mt-3 {
+        margin-top: 36px;
+    }
+    
+    
+    .mt-10 {
+        margin-top: 120px;
+    }
+
+    .mt-11 {
+        margin-top: 132px;
+    }
+
+    .mt-12 {
+        margin-top: 144px;
+    }
+
+    .mt-13 {
+        margin-top: 156px;
+    }
+
+
+
+    .mb-3 {
+        margin-bottom: 36px;
+    }
+}
+
+
+
+
+
+#line1 {
+    background: linear-gradient(0deg, #9447ff, var(--bg-dark))
+}
+
+#line2 {
+    background: linear-gradient(0deg, #47ffaf, #9447ff)
+}
